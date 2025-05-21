@@ -11,7 +11,7 @@ document.getElementById("attendanceForm").addEventListener("submit", function(ev
     };
 
     // Send data to Google Sheets Web App
-    fetch("https://script.google.com/macros/s/AKfycby2XdOQHHC6AjFfWnkRCrckid_HroB8Z5GS5oeWQq1-zMIKQiUCg-53JY_Q415SyH8/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbwyVweWVxUwpTkeu6YVT7jJd1EY0jjR-SYq9cVFRoieBaFpPCkCoq69JM9gqbVKSepK/exec", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: { "Content-Type": "application/json" }
