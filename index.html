@@ -31,3 +31,19 @@
         </div>
     </form>
 </div>
+function nextStep(stepId) {
+    document.querySelectorAll("form > div").forEach(div => div.style.display = "none");
+    document.getElementById(stepId).style.display = "block";
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+form {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
