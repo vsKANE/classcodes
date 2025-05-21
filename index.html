@@ -1,21 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Student Attendance</title>
-</head>
-<body>
-    <h1>Mark Your Attendance</h1>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+<div id="container">
+    <form id="attendanceForm">
+        <div id="step1">
+            <p>Mark your attendance?</p>
+            <button type="button" onclick="nextStep('step2')">Yes</button>
+            <button type="button">No</button>
+        </div>
 
-        <label for="id">Student ID:</label>
-        <input type="text" id="id" name="id" required><br><br>
+        <div id="step2" style="display: none;">
+            <p>Enter your name:</p>
+            <input type="text" name="name" required>
+            <button type="button" onclick="nextStep('step3')">Submit</button>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <div id="step3" style="display: none;">
+            <p>Enter your Student ID:</p>
+            <input type="text" name="studentID" required>
+            <button type="button" onclick="nextStep('step4')">Submit</button>
+        </div>
 
-        <button type="submit">Submit</button>
+        <div id="step4" style="display: none;">
+            <p>Enter your Email:</p>
+            <input type="email" name="email" required>
+            <button type="button" onclick="nextStep('step5')">Submit</button>
+        </div>
+
+        <div id="step5" style="display: none;">
+            <p>Enter the Date:</p>
+            <input type="date" name="date" required>
+            <button type="submit">Submit Attendance</button>
+        </div>
     </form>
-</body>
-</html>
+</div>
