@@ -1,1 +1,12 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
 
+form {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
